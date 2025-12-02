@@ -21,8 +21,8 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // ---- Load your Minecraft skin ----
-// IMPORTANT: put "myskin.png" in the SAME folder as index.html
-const skin = new THREE.TextureLoader().load("myskin.png", () => {
+// IMPORTANT: put "mySkin.png.png" in the SAME folder as index.html
+const skin = new THREE.TextureLoader().load("mySkin.png.png", () => {
     skin.magFilter = THREE.NearestFilter;
     createPlayer();
 });
@@ -73,3 +73,4 @@ window.addEventListener("resize", ()=>{
 
 </body>
 </html>
+
